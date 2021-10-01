@@ -1,0 +1,27 @@
+instance: 2
+original_name: House2
+elec_meters:
+  1: &emi
+    site_meter: true
+    device_model: EMI
+  2: &smart_plug
+    submeter_of: 0
+    device_model: SmartPlug
+  3: *smart_plug
+  4: *smart_plug
+
+appliances:
+- original_name: KETTLE
+  type: kettle
+  instance: 1
+  meters: [2]
+  
+- original_name: IRON
+  type: clothes iron
+  instance: 1
+  meters: [3]
+
+- original_name: WASHING_MACHINE
+  type: washing machine
+  instance: 1
+  meters: [4]

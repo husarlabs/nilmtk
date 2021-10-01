@@ -1,0 +1,18 @@
+name: Lerta
+long_name: Lerta Electrical Energy Dataset
+#creators:
+publication_date: 2021
+contact: ml@lerta.energy
+description: Over 1 years of power data for 4 homes.
+subject: Disaggregated power demand from domestic buildings.
+number_of_buildings: 4
+timezone: Europe/Warsaw
+geo_location:
+  locality: Poznań   # village, town, city or state
+  country: PL   # standard two-letter country code defined by ISO 3166-1 alpha-2
+  latitude: 52.4144 # Loughborough University's coorindates
+  longitude: 16.9211
+related_documents:
+- https://github.com/husarlabs/nilm-dataset-converter Repository contains converter to CLEAN format
+
+schema: https://github.com/nilmtk/nilm_metadata/tree/v0.2

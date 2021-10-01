@@ -1,0 +1,34 @@
+instance: 4
+original_name: House4
+elec_meters:
+  1: &emi
+    site_meter: true
+    device_model: EMI
+  2: &smart_plug
+    submeter_of: 0
+    device_model: SmartPlug
+  3: *smart_plug
+  4: *smart_plug
+  5: *smart_plug
+
+appliances:
+- original_name: FRIDGE
+  type: fridge
+  instance: 1
+  meters: [2]
+
+- original_name: DISHWASHER
+  type: dishwasher
+  instance: 1
+  meters: [3]
+
+- original_name: COOKER
+  type: cooker
+  instance: 1
+  meters: [4]
+
+- original_name: WASHING_MACHINE
+  type: washing machine
+  instance: 1
+  meters: [5]
+
